@@ -52,7 +52,7 @@ export const userLogin = (email, password) => async (dispatch, getState) => {
     const config = {
       "Content-Type": "application/json",
     };
-
+    const baseUrl="https://mydiary-backend-host.herokuapp.com";
     const { data } = await axios.post(
       baseUrl+"/users/login",
             { email, password },
